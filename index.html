@@ -1,0 +1,210 @@
+<base target="_blank"><style>@layer mm-artifact{body{margin:0;background:#fff}img{display:block;max-width:100%}}</style><style>@layer mm-artifact{:root{--code-bg:#eff1f5;--code-fg:#4c4f69;--code-border:#ccd0da}pre{background:var(--code-bg);color:var(--code-fg);border:1px solid var(--code-border);border-radius:6px;padding:12px 16px;overflow-x:auto;font-size:13px;line-height:1.6;tab-size:4}pre code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre}code:not(pre code){background:rgba(128,128,128,0.15);padding:0.15em 0.4em;border-radius:4px;font-size:0.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}}</style><script>(function(){function S(){var d={};Object.defineProperties(this,{getItem:{value:function(k){return d.hasOwnProperty(k)?d[k]:null}},setItem:{value:function(k,v){var o=d[k]||null;d[k]=String(v);this.length=Object.keys(d).length}},removeItem:{value:function(k){delete d[k];this.length=Object.keys(d).length}},clear:{value:function(){d={};this.length=0}},key:{value:function(i){return Object.keys(d)[i]||null}},length:{value:0,writable:true}})}try{window.localStorage}catch(e){Object.defineProperty(window,'localStorage',{value:new S(),configurable:true})}try{window.sessionStorage}catch(e){Object.defineProperty(window,'sessionStorage',{value:new S(),configurable:true})}var hp=history.pushState;history.pushState=function(){try{hp.apply(history,arguments)}catch(e){}};var hr=history.replaceState;history.replaceState=function(){try{hr.apply(history,arguments)}catch(e){}};try{document.cookie}catch(e){Object.defineProperty(document,'cookie',{get:function(){return ''},set:function(){},configurable:true})}})();</script><script>document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;e.preventDefault();var id=a.getAttribute('href').slice(1);if(!id)return;var el=document.getElementById(id);if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}try{history.replaceState(null,'','#'+id)}catch(e){}});</script><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyo Jin Kim</title>
+<style>
+  :root { --ink:#1a1a1a; --mute:#6b7280; --accent:#1f6feb; --line:#e5e7eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+         color:var(--ink); line-height:1.65; background:#fff; }
+  .wrap { max-width:840px; margin:0 auto; padding:56px 24px 96px; }
+  header { display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; }
+  .photo { width:132px; height:132px; border-radius:10px; background:#f3f4f6; border:1px solid var(--line);
+           object-fit:cover; flex:0 0 auto; }
+  h1 { font-size:2rem; margin:0 0 6px; letter-spacing:-.02em; }
+  .role { color:var(--mute); margin:0 0 10px; }
+  .links a { color:var(--accent); text-decoration:none; margin-right:14px; font-size:.93rem; }
+  .links a:hover { text-decoration:underline; }
+  h2 { font-size:.82rem; text-transform:uppercase; letter-spacing:.09em; color:var(--mute);
+       margin:44px 0 14px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:.95rem; margin:26px 0 10px; color:var(--ink); }
+  p { margin:0 0 14px; }
+  ul.pubs { padding:0; list-style:none; margin:0; }
+  ul.pubs li { margin-bottom:18px; }
+  .title { font-weight:600; }
+  .authors { font-size:.93rem; color:#374151; }
+  .venue { font-size:.9rem; color:var(--mute); }
+  .venue a { color:var(--accent); text-decoration:none; }
+  .venue a:hover { text-decoration:underline; }
+  .me { text-decoration:underline; }
+  footer { margin-top:56px; color:var(--mute); font-size:.85rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e6e6e6; --mute:#9ca3af; --accent:#6ea8ff; --line:#2a2f36; }
+    body { background:#0f1115; }
+    .photo { background:#1b1f27; }
+    .authors { color:#c8cdd4; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img class="photo" src="photo.jpg" alt="">
+  <div>
+    <h1>Hyo Jin Kim</h1>
+    <p class="role">Research Scientist &middot; Reality Labs Research, Meta</p>
+    <p class="links">
+      <a href="mailto:kimhyojin@meta.com">Email</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=rCw-l7oAAAAJ">Google&nbsp;Scholar</a>
+      <a href="https://github.com/REPLACE">GitHub</a>
+      <a href="https://www.linkedin.com/in/REPLACE">LinkedIn</a>
+    </p>
+  </div>
+</header>
+
+<h2>About</h2>
+<p>I am a research scientist at Reality Labs Research, Meta. My current work focuses on
+<strong>egocentric contextual AI</strong> for always-on wearable devices such as smart glasses &mdash;
+long-horizon video understanding, personal memory, and multimodal models grounded in a user's
+everyday visual stream. Earlier, my research centered on visual localization, learned local
+feature descriptors, scene understanding, and the privacy and security of visual data in
+AR&nbsp;/&nbsp;VR systems.</p>
+<p>I received my Ph.D. in Computer Science from the University of North Carolina at Chapel Hill,
+advised by Jan-Michael Frahm.</p>
+
+<h2>Publications</h2>
+
+<h3>Recent</h3>
+<ul class="pubs">
+  <li>
+    <div class="title">Agentic Very Long Video Understanding</div>
+    <div class="authors">Aniket Rege, Arka Sadhu, Yuliang Li, Kejie Li, Ramya Korlakai Vinayak,
+      Yuning Chai, Yong Jae Lee, <span class="me">Hyo Jin Kim</span> (corresponding author)</div>
+    <div class="venue">ACL 2026 (Main) &middot;
+      <a href="https://arxiv.org/abs/2601.18157">Paper</a> &middot;
+      <a href="https://facebookresearch.github.io/egagent/">Project&nbsp;page</a> &middot;
+      <a href="https://github.com/facebookresearch/egagent">Code</a></div>
+  </li>
+  <li>
+    <div class="title">SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for
+      Long-Horizon Memory</div>
+    <div class="authors">Samiul Alam, Shakhrul Iman Siam, Michael J. Proulx, James Fort,
+      Richard Newcombe, <span class="me">Hyo Jin Kim</span>, Mi Zhang</div>
+    <div class="venue">arXiv preprint &middot;
+      <a href="https://arxiv.org/abs/2606.00825">Paper</a> &middot;
+      <a href="https://supermemory-vqa.github.io/">Project&nbsp;page</a> &middot;
+      <a href="https://github.com/AIoT-MLSys-Lab/supermemory-vqa">Code</a></div>
+  </li>
+  <li>
+    <div class="title">Reading Recognition in the Wild</div>
+    <div class="authors">Charig Yang, Samiul Alam, Shakhrul Iman Siam, Michael J. Proulx,
+      Lambert Mathias, Kiran Somasundaram, Luis Pesqueira, James Fort, Sheroze Sheriffdeen,
+      Omkar Parkhi, Carl Ren, Mi Zhang, Yuning Chai, Richard Newcombe,
+      <span class="me">Hyo Jin Kim</span> (corresponding author)</div>
+    <div class="venue">NeurIPS 2025 &middot;
+      <a href="https://arxiv.org/abs/2505.24848">Paper</a> &middot;
+      <a href="https://www.projectaria.com/datasets/reading-in-the-wild/">Dataset</a> &middot;
+      <a href="https://explorer.projectaria.com/ritw">Data&nbsp;Explorer</a> &middot;
+      <a href="https://github.com/facebookresearch/reading_in_the_wild">Code</a></div>
+  </li>
+  <li>
+    <div class="title">EgoLM: Multi-Modal Language Model of Egocentric Motions</div>
+    <div class="authors">Fangzhou Hong, Vladimir Guzov, <span class="me">Hyo Jin Kim</span>,
+      Yuting Ye, Richard Newcombe, Ziwei Liu, Lingni Ma</div>
+    <div class="venue">CVPR 2025 &middot; Oral &middot;
+      <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Hong_EgoLM_Multi-Modal_Language_Model_of_Egocentric_Motions_CVPR_2025_paper.pdf">Paper</a> &middot;
+      <a href="https://hongfz16.github.io/projects/EgoLM">Project&nbsp;page</a></div>
+  </li>
+  <li>
+    <div class="title">Nymeria: A Massive Collection of Multimodal Egocentric Daily Motion
+      in the Wild</div>
+    <div class="authors">Lingni Ma, Yuting Ye, Fangzhou Hong, Vladimir Guzov, Yifeng Jiang,
+      Rowan Postyeni, Luis Pesqueira, Alexander Gamino, Vijay Baiyya,
+      <span class="me">Hyo Jin Kim</span>, Kevin Bailey, David S. Fosas, C. Karen Liu,
+      Ziwei Liu, Jakob Engel, Renzo De Nardi, Richard Newcombe</div>
+    <div class="venue">ECCV 2024 &middot;
+      <a href="https://arxiv.org/abs/2406.09905">Paper</a> &middot;
+      <a href="https://www.projectaria.com/datasets/nymeria">Dataset</a></div>
+  </li>
+</ul>
+
+<h3>Selected earlier work</h3>
+<ul class="pubs">
+  <li>
+    <div class="title">NinjaDesc: Content-Concealing Visual Descriptors via Adversarial Learning</div>
+    <div class="authors">Tony Ng, <span class="me">Hyo Jin Kim</span> (corresponding author),
+      Vincent T. Lee, Daniel DeTone, Tsun-Yi Yang, Tianwei Shen, Eddy Ilg, Vassileios Balntas,
+      Krystian Mikolajczyk, Chris Sweeney</div>
+    <div class="venue">CVPR 2022 &middot;
+      <a href="https://arxiv.org/abs/2112.12785">Paper</a> &middot;
+      <a href="https://github.com/facebookresearch/ninjadesc">Code</a></div>
+  </li>
+  <li>
+    <div class="title">Analysis and Mitigations of Reverse Engineering Attacks on Local
+      Feature Descriptors</div>
+    <div class="authors">Deeksha Dangwal, Vincent T. Lee, <span class="me">Hyo Jin Kim</span>,
+      Tianwei Shen, Meghan Cowan, Rajvi Shah, Caroline Trippel, Brandon Reagen,
+      Timothy Sherwood, Vasileios Balntas, Armin Alaghi, Eddy Ilg</div>
+    <div class="venue">BMVC 2021 &middot;
+      <a href="https://arxiv.org/abs/2105.03812">Paper</a></div>
+  </li>
+  <li>
+    <div class="title">Domain Adaptation of Learned Features for Visual Localization</div>
+    <div class="authors">Sungyong Baik, <span class="me">Hyo Jin Kim</span> (corresponding author), Tianwei Shen,
+      Eddy Ilg, Kyoung Mu Lee, Chris Sweeney</div>
+    <div class="venue">BMVC 2020 &middot;
+      <a href="https://arxiv.org/abs/2008.09310">Paper</a></div>
+  </li>
+  <li>
+    <div class="title">Hierarchy of Alternating Specialists for Scene Recognition</div>
+    <div class="authors"><span class="me">Hyo Jin Kim</span>, Jan-Michael Frahm</div>
+    <div class="venue">ECCV 2018 &middot;
+      <a href="https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Hyo_Jin_Kim_Hierarchy_of_Alternating_ECCV_2018_paper.php">Paper</a></div>
+  </li>
+  <li>
+    <div class="title">Learned Contextual Feature Reweighting for Image Geo-Localization</div>
+    <div class="authors"><span class="me">Hyo Jin Kim</span>, Enrique Dunn, Jan-Michael Frahm</div>
+    <div class="venue">CVPR 2017 &middot; Spotlight &middot;
+      <a href="https://openaccess.thecvf.com/content_cvpr_2017/papers/Kim_Learned_Contextual_Feature_CVPR_2017_paper.pdf">Paper</a> &middot;
+      <a href="http://openaccess.thecvf.com/content_cvpr_2017/supplemental/Kim_Learned_Contextual_Feature_2017_CVPR_supplemental.pdf">Supplementary</a> &middot;
+      <a href="http://openaccess.thecvf.com/content_cvpr_2017/poster/780_POSTER.pdf">Poster</a> &middot;
+      <a href="https://github.com/hyojinie/crn/">Code</a> &middot;
+      <a href="https://www.youtube.com/watch?v=BoN2fWDgsyU">Video</a></div>
+  </li>
+  <li>
+    <div class="title">Predicting Good Features for Image Geo-Localization Using Per-Bundle VLAD</div>
+    <div class="authors"><span class="me">Hyo Jin Kim</span>, Enrique Dunn, Jan-Michael Frahm</div>
+    <div class="venue">ICCV 2015 &middot;
+      <a href="https://openaccess.thecvf.com/content_iccv_2015/papers/Kim_Predicting_Good_Features_ICCV_2015_paper.pdf">Paper</a> &middot;
+      <a href="https://www.youtube.com/watch?v=X6FxD6zsZQc">Video</a></div>
+  </li>
+</ul>
+
+<p class="venue">A full list is available on my
+<a href="https://scholar.google.com/citations?hl=en&amp;user=rCw-l7oAAAAJ">Google Scholar profile</a>.</p>
+
+<h2>Talks</h2>
+<ul class="pubs">
+  <li>
+    <div class="title">Privacy Challenges for Machine Perception in AR</div>
+    <div class="venue">Project Aria Tutorial, CVPR 2022 &middot;
+      <a href="https://www.youtube.com/watch?v=BoN2fWDgsyU">Video</a></div>
+  </li>
+  <li>
+    <div class="title">Symmetry-Growing for Skewed Rotational Symmetry Detection</div>
+    <div class="authors"><span class="me">Hyo Jin Kim</span>, Minsu Cho, Kyoung Mu Lee</div>
+    <div class="venue">Symmetry Detection in Real-World Images &ndash; A Competition, CVPR 2011
+      &middot; Winner, Rotation Symmetry Detection</div>
+  </li>
+</ul>
+
+<h2>Service</h2>
+<p><strong>Reviewer</strong> &mdash; TPAMI, CVPR, ICCV, ECCV, AAAI, ICLR, BMVC, ACCV, 3DV, WACV</p>
+
+<h2>Media</h2>
+<ul class="pubs">
+  <li>
+    <div class="title">Women in Computer Vision: Hyo Jin Kim</div>
+    <div class="venue">Computer Vision News, November 2019, pp.&nbsp;30&ndash;33 &middot;
+      <a href="https://www.rsipvision.com/ComputerVisionNews-2019November/30/">Link</a></div>
+  </li>
+</ul>
+
+<footer>&copy; Hyo Jin Kim</footer>
+
+</div>
+</body>
+</html>
